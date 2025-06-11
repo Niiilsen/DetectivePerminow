@@ -1,10 +1,10 @@
-import {FC, useState} from "react";
+import {type FC, useState} from "react";
 import DetectiveCard, {type IDetectiveCard} from "./components/DetectiveCard.tsx";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel.tsx";
 
 const detectiveCards: IDetectiveCard[] = [
     {code: '5529', text: "Møt oss på The Irishman Pub kl 14:00", cardIndex: 0, unlocked: false},
-    {code: '0924', text: "Vi så noen som gikk mot heim med en blå ask!", cardIndex: 1, unlocked: false},
+    {code: '0924', text: "Vi så noen som gikk mot heim med en blå boks!", cardIndex: 1, unlocked: false},
     {code: '2399', text: "Den blå boksen er meget gammel og tilhører fortiden", cardIndex: 2, unlocked: false},
     {code: '6969', text: "Man kan ha det mye moro med gammel teknologi", cardIndex: 3, unlocked: false},
     {code: '1961', text: "Gjenstanden har tidligere tilhørt deg", cardIndex: 4, unlocked: false}

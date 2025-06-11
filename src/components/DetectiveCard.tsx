@@ -1,7 +1,8 @@
 import {type FC, useRef, useState} from "react";
 import Card from "./Card.tsx";
 
-import DetectiveIcon from '../assets/detective-svgrepo-com.svg?react';
+// @ts-ignore
+import DetectiveIcon from "@/assets/detective-svgrepo-com.svg?react";
 import clsx from "clsx";
 
 export interface IDetectiveCard {
@@ -42,7 +43,9 @@ const DetectiveCard: FC<IDetectiveCard> = ({code, text, className, unlocked, onU
                     inputContainerRef.current?.classList.toggle('animate-shake', true)
                     for (let i = 0; i < inputRefs.current.length; i++) {
                         if(inputRefs.current[i])
-                            inputRefs.current[i].value = "";
+                            { // @ts-ignore
+                                inputRefs.current[i].value = "";
+                            }
                     }
                     inputRefs.current[0]?.focus()
                 } else {
@@ -77,7 +80,9 @@ const DetectiveCard: FC<IDetectiveCard> = ({code, text, className, unlocked, onU
                     {[0, 1, 2, 3].map((_, i) => (
                         <input
                             key={i}
-                            ref={(el) => (inputRefs.current[i] = el)}
+                            ref={(el) => {
+                                inputRefs.current[i] = el;
+                            }}
                             type="text"
                             inputMode="numeric"
                             onChange={(e) => handleInput(e, i)}
