@@ -1,6 +1,6 @@
 {
   "name": "detectiveperminow",
-  "homepage": "https://detectiveperminow.site/", 
+  "homepage": "https://detectiveperminow.site/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,11 +20,13 @@
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.514.0",
     "react": "^19.1.0",
+    "react-audio-visualize": "^1.2.0",
     "react-dom": "^19.1.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.8",
     "vite-plugin-svgr": "^4.3.0",
-    "vite-svg-loader": "^5.1.0"
+    "vite-svg-loader": "^5.1.0",
+    "wavesurfer.js": "^7.9.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
